@@ -1,5 +1,5 @@
 Given /^I am some user$/ do
-  pending # express the regexp above with the code you wish you had
+  User.create! user_name: "Jake Long"
 end
 
 When /^I go to the index page$/ do
