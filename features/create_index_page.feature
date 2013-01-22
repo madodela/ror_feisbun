@@ -1,6 +1,9 @@
+@javascript
 Feature: Create index page
 
-  Scenario: the user accesses the web site and sees it
+  Scenario: a unregistered user accesses the web site
     Given I am some user
-    When I go to the index page
-    Then I see a register form
+    And I go to the index page
+    And I fill the form
+    When I click "Get registered"
+    Then I go to my profile page
