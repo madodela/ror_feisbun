@@ -5,4 +5,5 @@ Feature: Create index page
     Given I am some user
     And I go to the index page
     And I fill the form
-    Then I click "Get registered"
+    When I click "Get registered"
+    Then I should see my user page
